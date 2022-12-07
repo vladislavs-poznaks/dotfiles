@@ -35,6 +35,7 @@ function mkcd()
 # -------
 alias 🍺="git checkout -b drunk"
 alias ci="composer install"
+alias sail="bash vendor/bin/sail"
 
 #-----------------------
 # Kubernetes Aliases
