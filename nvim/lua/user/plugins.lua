@@ -139,6 +139,21 @@ use({
   requires = 'tpope/vim-rhubarb',
 })
 
+-- Improves syntax highlighting
+use({
+  'nvim-treesitter/nvim-treesitter',
+  run = function()
+    require('nvim-treesitter.install').update({ with_sync = true })
+  end,
+  requires = {
+    'nvim-treesitter/nvim-treesitter-textobjects',
+    'JoosepAlviste/nvim-ts-context-commentstring',
+  },
+  config = function()
+    require('user/plugins/treesitter')
+  end,
+})
+
 -- Floating terminal
 use({
   'voldikss/vim-floaterm',
@@ -151,21 +166,6 @@ use({
       highlight link Floaterm CursorLine
       highlight link FloatermBorder CursorLineBg
     ]])
-  end,
-})
-
--- Improves syntax highlighting
-use({
-  'nvim-treesitter/nvim-treesitter',
-  run = function()
-    require('nvim-treesitter.install').update({ with_sync = true })
-  end,
-  requires = {
-    'JoosepAlviste/nvim-ts-context-commentstring',
-    'nvim-treesitter/nvim-treesitter-textobjects',
-  },
-  config = function()
-    require('user/plugins/treesitter')
   end,
 })
 
