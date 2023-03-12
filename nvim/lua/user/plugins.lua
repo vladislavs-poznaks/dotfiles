@@ -154,6 +154,17 @@ use({
   end,
 })
 
+-- Improves syntax highlighting
+use({
+  'nvim-treesitter/nvim-treesitter',
+  run = function()
+    require('nvim-treesitter.install').update({ with_sync = true })
+  end,
+  config = function()
+    require('user/plugins/treesitter')
+  end,
+})
+
 -- Commenting support
 use('tpope/vim-commentary')
 
