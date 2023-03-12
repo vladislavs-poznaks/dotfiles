@@ -133,6 +133,12 @@ use({
   end,
 })
 
+-- GIT commands
+use({
+  'tpope/vim-fugitive',
+  requires = 'tpope/vim-rhubarb',
+})
+
 -- Commenting support
 use('tpope/vim-commentary')
 
