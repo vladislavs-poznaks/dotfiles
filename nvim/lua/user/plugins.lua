@@ -154,6 +154,35 @@ use({
   end,
 })
 
+-- Language Server Protocol
+use({
+  'neovim/nvim-lspconfig',
+  requires = {
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
+  },
+  config = function()
+    require('user/plugins/lspconfig')
+  end,
+})
+
+-- Autocompletion
+use({
+    'hrsh7th/nvim-cmp',
+    requires = {
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-nvim-lsp-signature-help',
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-path',
+      'L3MON4D3/LuaSnip',
+      'saadparwaiz1/cmp_luasnip',
+      'onsails/lspkind-nvim',
+    },
+    config = function()
+      require('user/plugins/cmp')
+    end,
+  })
+
 -- Floating terminal
 use({
   'voldikss/vim-floaterm',
