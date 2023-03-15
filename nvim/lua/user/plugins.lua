@@ -160,6 +160,9 @@ use({
   requires = {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
+    'b0o/schemastore.nvim',
+    'jose-elias-alvarez/null-ls.nvim',
+    'jayp0521/mason-null-ls.nvim',
   },
   config = function()
     require('user/plugins/lspconfig')
@@ -182,21 +185,6 @@ use({
       require('user/plugins/cmp')
     end,
   })
-
--- Floating terminal
-use({
-  'voldikss/vim-floaterm',
-  config = function()
-    vim.g.floaterm_width = 0.8
-    vim.g.floaterm_height = 0.8
-    vim.keymap.set('n', 'TT', ':FloatermToggle<CR>')
-    vim.keymap.set('t', 'TT', '<C-\\><C-n>:FloatermToggle<CR>')
-    vim.cmd([[
-      highlight link Floaterm CursorLine
-      highlight link FloatermBorder CursorLineBg
-    ]])
-  end,
-})
 
 -- Commenting support
 use('tpope/vim-commentary')
@@ -288,6 +276,21 @@ use({
   'sickill/vim-pasta',
   config = function()
     vim.g.pasta_disabled_filatypes = { 'fugitive' }
+  end,
+})
+
+-- Floating terminal
+use({
+  'voldikss/vim-floaterm',
+  config = function()
+    vim.g.floaterm_width = 0.8
+    vim.g.floaterm_height = 0.8
+    vim.keymap.set('n', 'TT', ':FloatermToggle<CR>')
+    vim.keymap.set('t', 'TT', '<C-\\><C-n>:FloatermToggle<CR>')
+    vim.cmd([[
+      highlight link Floaterm CursorLine
+      highlight link FloatermBorder CursorLineBg
+    ]])
   end,
 })
 
