@@ -6,6 +6,8 @@ local luasnip = require('luasnip')
 local cmp = require('cmp')
 local lspkind = require('lspkind')
 
+require('luasnip/loaders/from_snipmate').lazy_load()
+
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,longest,preview'
 
