@@ -290,6 +290,15 @@ use({
   end,
 })
 
+-- Projectionist
+use({
+  'tpope/vim-projectionist',
+  requires = 'tpope/vim-dispatch',
+  config = function()
+    require('user/plugins/projectionist')
+  end,
+})
+
 -- Floating terminal
 use({
   'voldikss/vim-floaterm',
