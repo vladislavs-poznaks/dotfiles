@@ -11,11 +11,13 @@ tap "homebrew/services"
 ############
 # GIT
 brew "git"
+brew "gpg"
 # Neovim
 brew "neovim"
 brew "tmux"
 brew "fzf"
 brew "ripgrep"
+brew "luacheck"
 # PHP
 brew "php"
 brew "composer"
