@@ -27,10 +27,19 @@ brew "k9s"
 brew "kubernetes-cli", link: false
 # Misc
 brew "nginx"
+# Mac App Store manager
+brew "mas"
+# Mac backup
+brew "mackup"
 
 ############
-# Binaries
+# Casks
 ############
 cask "bitwarden"
-cask "iconjar"
+cask "brave-browser"
+cask "discord"
 cask "stats"
+cask "iconjar"
+cask "docker"
+cask "sequel-ace"
+cask "insomnia"
