@@ -90,3 +90,5 @@
     defaultBranch = main
 [user]
     signingkey = vladislavs.poznaks@gmail.com
+	name = Vladislavs Poznaks
+	email = vladislavs.poznaks@gmail.com
