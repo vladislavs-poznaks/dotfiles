@@ -88,3 +88,5 @@
     rebase = false
 [init]
     defaultBranch = main
+[user]
+    signingkey = vladislavs.poznaks@gmail.com
