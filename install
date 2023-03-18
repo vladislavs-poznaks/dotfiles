@@ -20,6 +20,9 @@ ln -sf $DOTFILES/git/gitignore_global $HOME/.gitignore_global
 rm -rf $HOME/.config/phpactor
 ln -s $DOTFILES/nvim $HOME/.config/phpactor
 
+rm -rf $HOME/.mackup.cfg
+ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
+
 mkdir -p $HOME/.local/bin
 
 ln -sf $DOTFILES/scripts/t $HOME/.local/bin/t
