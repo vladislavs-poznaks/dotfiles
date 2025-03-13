@@ -18,9 +18,13 @@ else
   echo "Homebrew is already installed."
 fi
 
-# Removes ~/.zshrc if it exists and symlinks the new one from the current directory (.dotfiles)
+# Removes ~/.zshrc if it exists and symlinks the new one from the current directory (dotfiles)
 rm -f "$HOME/.zshrc"
 ln -s "$(PWD)/.zshrc" "$HOME/.zshrc"
+
+# Removes ~/.config/ghostty/config if it exists and symlinks the new one from the current directory (dotfiles)
+rm -f "$HOME/.config/ghostty/config"
+ln -s "$(PWD)/.ghostty/config" "$HOME/.config/ghostty/config"
 
 # Update Homebrew recipes
 brew update
