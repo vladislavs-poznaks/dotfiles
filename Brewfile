@@ -7,7 +7,7 @@ tap 'homebrew/bundle'
 brew 'php'
 
 # Apps
-cask 'iterm2'
+cask 'ghostty'
 cask 'discord'
 cask 'docker'
 cask 'google-chrome'
