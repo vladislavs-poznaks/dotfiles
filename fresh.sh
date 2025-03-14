@@ -28,6 +28,10 @@ rm -rf "$HOME/.config/ghostty"
 [ ! -d "$HOME/.config/ghostty" ] && mkdir "$HOME/.config/ghostty"
 ln -s "$(PWD)/.ghostty/config" "$HOME/.config/ghostty/config"
 
+# Removes ~/.vimrc if it exists and symlinks the new one from the current directory (dotfiles)
+rm -f "$HOME/.vimrc"
+ln -s "$(PWD)/.vimrc" "$HOME/.vimrc"
+
 # Update Homebrew recipes
 brew update
 
