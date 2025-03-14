@@ -6,6 +6,7 @@ tap 'homebrew/bundle'
 # Development
 brew 'php'
 brew 'composer'
+brew 'npm'
 
 # Apps
 cask 'ghostty'
