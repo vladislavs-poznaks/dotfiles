@@ -25,6 +25,7 @@ ln -s "$(PWD)/.zshrc" "$HOME/.zshrc"
 # Removes ~/.config/ghostty/config if it exists and symlinks the new one from the current directory (dotfiles)
 rm -rf "$HOME/.config/ghostty"
 
+[ ! -d "$HOME/.config" ] && mkdir "$HOME/.config"
 [ ! -d "$HOME/.config/ghostty" ] && mkdir "$HOME/.config/ghostty"
 ln -s "$(PWD)/.ghostty/config" "$HOME/.config/ghostty/config"
 
