@@ -45,3 +45,5 @@ brew bundle --file ./Brewfile --verbose
 [ ! -d "$HOME/Code/projects" ] && mkdir "$HOME/Code/projects"
 [ ! -d "$HOME/Code/work" ] && mkdir "$HOME/Code/work"
 
+# Set macOS preferences - we will run this last because this will reload the shell
+source ./.macos
