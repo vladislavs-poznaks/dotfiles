@@ -11,6 +11,7 @@ brew 'npm'
 
 # Apps
 cask 'ghostty'
+cask 'bitwarden'
 cask 'discord'
 cask 'docker'
 cask 'google-chrome'
