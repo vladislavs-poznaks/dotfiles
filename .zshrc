@@ -7,7 +7,7 @@ export DOTFILES=$HOME/dotfiles
 export ZSH="$HOME/.oh-my-zsh"
 
 # Show a full path in right corner
-RPS1='%~'
+RPS1='%F{242}%~%f'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
