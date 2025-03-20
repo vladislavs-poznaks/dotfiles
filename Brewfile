@@ -1,47 +1,25 @@
-############
 # Taps
-############
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
-tap "homebrew/services"
+tap 'homebrew/bundle'
 
-############
 # Binaries
-############
-# GIT
-brew "git"
-brew "gpg"
-# Neovim
-brew "neovim"
-brew "tmux"
-brew "fzf"
-brew "ripgrep"
-brew "luacheck"
-# PHP
-brew "php"
-brew "composer"
-# Docker
-brew "docker"
-brew "docker-compose", link: false
-# Kubernetes
-brew "k9s"
-brew "kubernetes-cli", link: false
-# Misc
-brew "nginx"
-# Mac App Store manager
-brew "mas"
-# Mac backup
-brew "mackup"
 
-############
-# Casks
-############
-cask "bitwarden"
-cask "brave-browser"
-cask "discord"
-cask "stats"
-cask "iconjar"
-cask "docker"
-cask "sequel-ace"
-cask "insomnia"
+# Development
+brew 'php'
+brew 'composer'
+brew 'node'
+brew 'npm'
+brew 'go'
+
+# Apps
+cask 'ghostty'
+cask 'bitwarden'
+cask 'discord'
+cask 'docker'
+cask 'google-chrome'
+cask 'tableplus'
+cask 'visual-studio-code'
+
+# Quicklook
+cask 'qlmarkdown'
+cask 'quicklook-json'
+
