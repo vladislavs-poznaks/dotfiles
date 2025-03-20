@@ -37,7 +37,6 @@ ln -s "$(PWD)/.vimrc" "$HOME/.vimrc"
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
 brew bundle --file ./Brewfile --verbose
 
 # Check if directories exist, and create them if they don't
