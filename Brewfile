@@ -8,6 +8,7 @@ brew 'php'
 brew 'composer'
 brew 'node'
 brew 'npm'
+brew 'go'
 
 # Apps
 cask 'ghostty'
