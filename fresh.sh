@@ -33,6 +33,9 @@ ln -s "$(PWD)/.ghostty/config" "$HOME/.config/ghostty/config"
 rm -f "$HOME/.vimrc"
 ln -s "$(PWD)/.vimrc" "$HOME/.vimrc"
 
+rm -f "$HOME/.oh-my-zsh/themes/cprz.zsh-theme" 
+ln -s "$(PWD)/cprz.zsh-theme" "$HOME/.oh-my-zsh/themes/cprz.zsh-theme"
+
 # Update Homebrew recipes
 brew update
 
