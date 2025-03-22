@@ -9,6 +9,7 @@ brew 'composer'
 brew 'node'
 brew 'npm'
 brew 'go'
+brew 'python3'
 
 # Apps
 cask 'ghostty'
