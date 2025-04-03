@@ -2,6 +2,11 @@
 
 echo "Setting up your Mac..."
 
+# Optional hostname argument
+if [ -n "$1" ]; then
+  export CUSTOM_HOSTNAME="$1"
+fi
+
 # Check for Oh My Zsh and install if not present
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "Installing Oh My Zsh..."

@@ -18,9 +18,15 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "MacBook cprz"
-sudo scutil --set HostName "cprz"
-sudo scutil --set LocalHostName "cprz"
+# Set Hostname if CUSTOM_HOSTNAME is provided
+if [ -n "$CUSTOM_HOSTNAME" ]; then
+  echo "Setting hostname to $CUSTOM_HOSTNAME..."
+  sudo scutil --set HostName "$CUSTOM_HOSTNAME"
+  sudo scutil --set ComputerName "$CUSTOM_HOSTNAME"
+  sudo scutil --set LocalHostName "$CUSTOM_HOSTNAME"
+else
+  echo "No hostname provided. Skipping hostname setup."
+fi
 # sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "cprz"
 
 # Disable the sound effects on boot
