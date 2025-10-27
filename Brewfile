@@ -16,6 +16,7 @@ cask 'ghostty'
 cask 'bitwarden'
 cask 'discord'
 cask 'docker'
-cask 'google-chrome'
+cask 'brave-chrome'
 cask 'tableplus'
+cask 'phpstorm'
 
