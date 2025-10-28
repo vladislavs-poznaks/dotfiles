@@ -1,5 +1,6 @@
 # Taps
 tap 'homebrew/bundle'
+tap 'brew tap oven-sh/bun'
 
 # Binaries
 
@@ -8,6 +9,7 @@ brew 'php'
 brew 'composer'
 brew 'node'
 brew 'npm'
+brew 'bun'
 brew 'go'
 brew 'python3'
 
